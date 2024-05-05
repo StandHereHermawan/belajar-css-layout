@@ -1,0 +1,2 @@
+untuk membuat div dengan attribut class secara otomatis oleh vscode, tinggal
+ketik .namaKelas lalu tekan enter.
