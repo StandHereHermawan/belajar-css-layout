@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Shink</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .content {
+            background-color: #202020;
+            color: white;
+            font-weight: normal;
+            text-align: justify;
+            text-indent: 8mm;
+            border-radius: 2mm;
+            outline: 1.5mm solid #404040;
+            padding: 5mm;
+            margin: 2.5mm;
+        }
+
+        .content1 {
+            /* flex-shrink: 1.2; */
+            flex-basis: 400mm;
+        }
+
+        .content2 {
+            /* flex-shrink: 1.1; */
+            flex-basis: 800mm;
+        }
+
+        .content3 {
+            /* flex-shrink: 1.1; */
+            flex-basis: 800mm;
+        }
+
+        .content4 {
+            /* flex-shrink: 1.2; */
+            flex-basis: 400mm;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content content1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, doloremque. Error, consequatur. Aperiam iste nam cupiditate alias corporis beatae, voluptatem mollitia deleniti, eos at consectetur ipsa ducimus atque quasi rem!</div>
+        <div class="content content2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, ullam? Adipisci ut non similique veritatis, ratione quidem maxime facilis voluptate facere quam, ullam alias obcaecati mollitia laudantium nemo soluta distinctio.</div>
+        <div class="content content3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eveniet delectus iure obcaecati quidem veniam quae aperiam? Commodi autem minima vel quibusdam repudiandae quas corporis repellendus facilis, unde alias incidunt.</div>
+        <div class="content content4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci culpa corporis in reprehenderit pariatur nesciunt, similique expedita, minus exercitationem labore ad perferendis dolor ullam non quaerat illum cumque recusandae omnis.</div>
+    </div>
+</body>
+</html>
