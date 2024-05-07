@@ -1,0 +1,7 @@
+'align-items: stretch'
+
+attribut diatas ga work kalau ada 
+attribut
+max-width:<nilai> dan max-weight:<nilai> 
+juga 
+height:fit-content dan width:fit-content 

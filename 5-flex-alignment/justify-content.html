@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Justify Elements</title>
+    <style>
+        body {
+            background-color: #404040;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .container {
+            display: flex;
+            height: fit-content;
+            width: 80vw;
+            background-color: #181b1a;
+            border-radius: 1vw;
+            padding: 0.1vw;
+            margin: 0.2vw;
+            justify-content: space-evenly;
+        }
+
+        .content {
+            background-color: #64706c;
+            color: white;
+            
+            border: 0.3vw solid white;
+            outline: white;
+            outline-width: 1vw;
+            text-shadow: 0vw 0vw 0.7vw #404040;
+            border-radius: 1vw;
+            
+            height: fit-content;
+            width: fit-content;
+            max-width: 50mm;
+            
+            padding: 10mm;
+            margin: 10mm;
+        }
+
+        .space-evenly{
+            justify-content: space-evenly;
+        }
+
+        .space-around {
+            justify-content: space-around;
+        }
+        
+        .space-between {
+            justify-content: space-between;
+        }
+        
+        .center {
+            justify-content: center;
+        }
+
+        .flex-start {
+            justify-content: flex-start;
+        }
+
+        .flex-end {
+            justify-content: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <div class="container center">
+        <div class="content">
+            <h1>Ini Content 1</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum rerum quasi temporibus, perspiciatis aut nemo? Est, eius? Consequuntur libero pariatur animi illum quis, necessitatibus nisi, ex quae laborum praesentium consectetur?</p>
+        </div>
+        <div class="content">
+            <h1>Ini Content 2</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum rerum quasi temporibus, perspiciatis aut nemo? Est, eius? Consequuntur libero pariatur animi illum quis, necessitatibus nisi, ex quae laborum praesentium consectetur?</p>
+        </div>
+        <div class="content">
+            <h1>Ini Content 3</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum rerum quasi temporibus, perspiciatis aut nemo? Est, eius? Consequuntur libero pariatur animi illum quis, necessitatibus nisi, ex quae laborum praesentium consectetur?</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="content">
+            <h1>Ini Content 1</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum rerum quasi temporibus, perspiciatis aut nemo? Est, eius? Consequuntur libero pariatur animi illum quis, necessitatibus nisi, ex quae laborum praesentium consectetur?</p>
+        </div>
+        <div class="content">
+            <h1>Ini Content 2</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum rerum quasi temporibus, perspiciatis aut nemo? Est, eius? Consequuntur libero pariatur animi illum quis, necessitatibus nisi, ex quae laborum praesentium consectetur?</p>
+        </div>
+        <div class="content">
+            <h1>Ini Content 3</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum rerum quasi temporibus, perspiciatis aut nemo? Est, eius? Consequuntur libero pariatur animi illum quis, necessitatibus nisi, ex quae laborum praesentium consectetur?</p>
+        </div>
+    </div>
+    <div class="container space-between">
+        <div class="content">
+            <h1>Ini Content 1</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum rerum quasi temporibus, perspiciatis aut nemo? Est, eius? Consequuntur libero pariatur animi illum quis, necessitatibus nisi, ex quae laborum praesentium consectetur?</p>
+        </div>
+        <div class="content">
+            <h1>Ini Content 2</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum rerum quasi temporibus, perspiciatis aut nemo? Est, eius? Consequuntur libero pariatur animi illum quis, necessitatibus nisi, ex quae laborum praesentium consectetur?</p>
+        </div>
+        <div class="content">
+            <h1>Ini Content 3</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum rerum quasi temporibus, perspiciatis aut nemo? Est, eius? Consequuntur libero pariatur animi illum quis, necessitatibus nisi, ex quae laborum praesentium consectetur?</p>
+        </div>
+    </div>
+    <div class="container space-around">
+        <div class="content">
+            <h1>Ini Content 1</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum rerum quasi temporibus, perspiciatis aut nemo? Est, eius? Consequuntur libero pariatur animi illum quis, necessitatibus nisi, ex quae laborum praesentium consectetur?</p>
+        </div>
+        <div class="content">
+            <h1>Ini Content 2</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum rerum quasi temporibus, perspiciatis aut nemo? Est, eius? Consequuntur libero pariatur animi illum quis, necessitatibus nisi, ex quae laborum praesentium consectetur?</p>
+        </div>
+        <div class="content">
+            <h1>Ini Content 3</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum rerum quasi temporibus, perspiciatis aut nemo? Est, eius? Consequuntur libero pariatur animi illum quis, necessitatibus nisi, ex quae laborum praesentium consectetur?</p>
+        </div>
+    </div>
+    <div class="container flex-start">
+        <div class="content">
+            <h1>Ini Content 1</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum rerum quasi temporibus, perspiciatis aut nemo? Est, eius? Consequuntur libero pariatur animi illum quis, necessitatibus nisi, ex quae laborum praesentium consectetur?</p>
+        </div>
+        <div class="content">
+            <h1>Ini Content 2</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum rerum quasi temporibus, perspiciatis aut nemo? Est, eius? Consequuntur libero pariatur animi illum quis, necessitatibus nisi, ex quae laborum praesentium consectetur?</p>
+        </div>
+        <div class="content">
+            <h1>Ini Content 3</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum rerum quasi temporibus, perspiciatis aut nemo? Est, eius? Consequuntur libero pariatur animi illum quis, necessitatibus nisi, ex quae laborum praesentium consectetur?</p>
+        </div>
+    </div>
+    <div class="container flex-end">
+        <div class="content">
+            <h1>Ini Content 1</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum rerum quasi temporibus, perspiciatis aut nemo? Est, eius? Consequuntur libero pariatur animi illum quis, necessitatibus nisi, ex quae laborum praesentium consectetur?</p>
+        </div>
+        <div class="content">
+            <h1>Ini Content 2</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum rerum quasi temporibus, perspiciatis aut nemo? Est, eius? Consequuntur libero pariatur animi illum quis, necessitatibus nisi, ex quae laborum praesentium consectetur?</p>
+        </div>
+        <div class="content">
+            <h1>Ini Content 3</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum rerum quasi temporibus, perspiciatis aut nemo? Est, eius? Consequuntur libero pariatur animi illum quis, necessitatibus nisi, ex quae laborum praesentium consectetur?</p>
+        </div>
+    </div>
+</body>
+</html>
