@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Lane Names</title>
+    <style>
+        body {
+            background-color: #404040;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 100px auto 100px;
+            grid-template-rows: 50px auto 100px;
+            grid-template-areas: 
+            "header header header"
+            ". content ."
+            "footer footer footer";            
+
+            background-color: #505050;
+            /* margin: 1vw; */
+            /* border-radius: 1vw; */
+        }
+
+        .header {
+            background-color: #606060;
+            grid-area: header;
+            
+            border-radius: 1vw;
+            margin: 1vw;
+            padding: 1vw;
+
+            text-align: center;
+            text-shadow: 0vw 0vw 2vw black;
+            color: white;
+        }
+
+        .footer {
+            background-color: #606060;
+            grid-area: footer;
+
+            border-radius: 1vw;
+            margin: 1vw;
+            padding: 1vw;
+
+            text-align: center;
+            text-shadow: 0vw 0vw 2vw black;
+            color: white;
+        }
+
+        .content {
+            background-color: #909090;
+            grid-area: content;
+
+            border-radius: 1vw;
+            margin: 0vw 1vw;
+            padding: 1vw;
+        }
+
+        h1, p {
+            text-shadow: 0vw 0vw 2vw black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            Selamat datang di web Arief Karditya Hermawan.
+        </div>
+        <div class="content">
+            <h1>Arief Karditya Hermawan</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi inventore dignissimos aliquid harum optio? Dolorem laboriosam molestiae ut dolore reprehenderit ex quae nulla nisi quos assumenda provident, voluptate, id odio.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quia ad magni harum suscipit. Culpa, unde accusantium magni omnis voluptatum deleniti animi reprehenderit tenetur recusandae harum provident eius repellendus consectetur?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quia ad magni harum suscipit. Culpa, unde accusantium magni omnis voluptatum deleniti animi reprehenderit tenetur recusandae harum provident eius repellendus consectetur?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quia ad magni harum suscipit. Culpa, unde accusantium magni omnis voluptatum deleniti animi reprehenderit tenetur recusandae harum provident eius repellendus consectetur?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quia ad magni harum suscipit. Culpa, unde accusantium magni omnis voluptatum deleniti animi reprehenderit tenetur recusandae harum provident eius repellendus consectetur?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quia ad magni harum suscipit. Culpa, unde accusantium magni omnis voluptatum deleniti animi reprehenderit tenetur recusandae harum provident eius repellendus consectetur?</p>
+
+        </div>
+        <div class="footer">
+            Develop with nigga Arief Karditya Hermawan
+        </div>
+    </div>
+</body>
+</html>
