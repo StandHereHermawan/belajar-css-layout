@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justify and Align Self</title>
+    <style>
+        .container {
+            background-color: #202020;
+            height: 500px;
+            border-radius: 1vw;
+
+            display: grid;
+            grid-template-columns: 100px 100px 100px;
+            grid-template-rows: 100px 100px 100px;
+            
+            justify-items: center;
+            align-items: center;
+
+            justify-content: center;
+            align-content: center;
+        }
+
+        .content {
+            background-color: #404040;
+            border: 1px solid white;
+            border-radius: 1vw;
+
+            color: white;
+            padding: 10px;
+
+            text-align: center;
+            font-weight: bolder;
+        }
+
+        .right {
+            justify-self: flex-end;
+        }
+
+        .bottom {
+            align-self: flex-end;
+        }
+
+        .left {
+            justify-self: flex-start;
+        }
+
+        .upper {
+            align-self: flex-start;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content right bottom">1</div>
+        <div class="content">2</div>
+        <div class="content left bottom">3</div>
+        <div class="content">4</div>
+        <div class="content">5</div>
+        <div class="content">6</div>
+        <div class="content right upper">7</div>
+        <div class="content">8</div>
+        <div class="content left upper">9</div>
+    </div>
+</body>
+</html>
