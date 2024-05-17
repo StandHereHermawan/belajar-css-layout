@@ -1,0 +1,16 @@
+body {
+    background-color: #404040;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.1mm;
+    row-gap: 1.1mm;
+}
+
+.content {
+    background-color: white;
+    padding: 0vw 1vw 1vw;
+    border-radius: 4mm;
+}
