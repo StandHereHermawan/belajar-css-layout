@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menubar</title>
+    <style>
+        body {
+            background-color: #404040;
+        }
+        .content {
+            background-color: #303030;
+            padding: 3mm;
+            color: white;
+            text-shadow: 0vw 0vw 0.5mm;
+            border-radius: 3mm;
+        }
+        .menubar {
+            display: inline-block;
+        }
+        .menu {
+            background-color: #353535;
+            color: white;
+            padding: 3mm;
+            border: none;
+            cursor: pointer;
+            border-radius: 3mm;
+        }
+        .menulist {
+            display: none;
+            background-color: white;
+            position: absolute;
+            padding: 3mm;
+            border-radius: 3mm;
+            cursor: pointer;
+        }
+        .menulist a {
+            display: block;
+            text-decoration: none;
+            color: white;
+            padding: 3mm;
+        }
+        .menulist a:hover {
+            display: block;
+            text-decoration: none;
+            color: white;
+            padding: 3mm;
+            background-color: #252525;
+            text-shadow: 0vw 0vw 1mm white;
+            border-radius: 3mm;
+        }
+        .menubar:hover .menu {
+            background-color: #252525;
+            text-shadow: 0vw 0vw 1mm;
+        }
+        .menubar:hover .menulist {
+            display: block;
+            background-color: #353535;
+        }
+        .menubar:hover .menulist:hover {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="menubar">
+        <button class="menu">Social Media</button>
+        <div class="menulist">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Youtube</a>
+            <a href="#">Tiktok</a>
+            <a href="https://github.com/StandHereHermawan/belajar-css-layout">Github</a>
+        </div>
+    </div>
+    <div class="content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, ex sapiente! Expedita quas temporibus culpa repellendus consequatur praesentium. Tenetur, odit porro quae ipsum sunt illum neque laboriosam eveniet facilis voluptas?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, rem aliquid laborum maiores voluptatibus fuga dolorem perspiciatis omnis a incidunt accusamus ab quam inventore quia sed culpa, quasi hic amet.</p>
+    </div>
+</body>
+</html>
